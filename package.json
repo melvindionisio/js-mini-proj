@@ -1,0 +1,15 @@
+{
+  "name": "js-sass",
+  "version": "1.0.0",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-sass": "node-sass src/main.scss styles.css -w"
+  },
+  "author": "melvindionisio",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "node-sass": "^6.0.0"
+  }
+}
