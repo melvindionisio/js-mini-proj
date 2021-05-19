@@ -1,6 +1,18 @@
 @import 'fragments/colors';
 @import 'fragments/resets';
 
+@keyframes pulse {
+	0% {
+		opacity: 0;
+	}
+	50% {
+		opacity: 1;
+	}
+	100% {
+		opacity: 0;
+	}
+}
+
 .character-counter {
     min-height: 100vh;
     display: flex;
@@ -8,6 +20,19 @@
     align-items: center;
     flex-direction: column;
     background-color: $green-500;
+    position: relative;
+
+    & .start {
+    	position: absolute;
+    	left: 50%;
+    	bottom: 5%;
+    	transform: translateX(-50%);
+
+    	font-size: 2rem;
+    	animation: pulse 700ms ease infinite;
+    	color: $green-300;
+    	text-transform: uppercase;
+    }
 
     & .proj-title {
         color: $green-200;
