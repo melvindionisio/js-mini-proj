@@ -4,7 +4,7 @@
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build-sass": "node-sass src/main.scss public/styles.css -w"
+    "build-sass": "node-sass src/main.scss public/styles.css "
   },
   "author": "melvindionisio",
   "license": "ISC",
