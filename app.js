@@ -24,4 +24,4 @@ toggleInclude.addEventListener('change', () => {
         indicator.textContent = "(spaces not included)";
 
     setCounted();
-})
+});
